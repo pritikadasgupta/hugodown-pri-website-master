@@ -1,0 +1,205 @@
+---
+output: hugodown::md_document
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
+title: "Testing custom fonts in plots"
+subtitle: ""
+summary: "Playing around with `ragg`"
+authors: []
+tags: []
+categories: []
+date: 2020-07-29
+lastmod: 2020-07-29
+featured: false
+draft: true
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
+image:
+  caption: ""
+  focal_point: ""
+  preview_only: false
+
+# Projects (optional).
+#   Associate this post with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#   Otherwise, set `projects = []`.
+projects: []
+---
+
+Testing using custom fonts with `ragg` and `systemfonts` (although don't seem to need to have either library loaded!)
+
+```{r}
+library(ggplot2)
+```
+
+### Using a font saved on my computer as .ttf
+
+```{r}
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Neutraface Slab Display TT Bold", size = 20))
+```
+
+### Using a Google Font declared in `emk_font_set2`
+
+```{r eval = FALSE}
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Raleway", size = 20))
+```
+
+### Using a Google Font saved in Font Book
+
+```{r}
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Mulish", size = 20))
+```
+
+### Using a Google Font with `showtext`
+
+### Using a .ttf font with `cairo`
+
+```{r}
+p <- ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Mulish", size = 20))
+
+ggsave("Mulish-title.pdf", device = cairo_pdf)
+```
+
+### Using a .oft font with `cairo`
+This also works
+
+```{r}
+p <- ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Museo", size = 20))
+
+ggsave("Museo-title.pdf", device = cairo_pdf)
+```
+
+### Using a .otf with `ragg`
+
+```{r eval = FALSE}
+quartz()
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Museo", size = 20))
+```
+
+
+Also works
+
+```{r}
+p <- ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Museo", size = 20))
+
+ggsave("Museo-title.png", type = "cairo")
+```
+
+### Using a computer .otf font with `showtext`
+
+```{r}
+library(showtext)
+```
+
+Does not work:
+```{r eval = FALSE}
+showtext_auto()
+
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Museo", size = 20))
+```
+
+Not sure what counts as value for `regular`
+```{r eval = FALSE}
+font_add("Museo", regular = "Museo")
+showtext_auto()
+
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Museo", size = 20))
+```
+```{r}
+library(dplyr)
+library(stringr)
+systemfonts::system_fonts() %>%
+  filter(str_detect(path, "Museo"))
+```
+
+
+```{r eval = FALSE}
+font_add("Museo", regular = "/Users/ellakaye/Library/Fonts/exljbris - Museo-500")
+showtext_auto()
+
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Museo", size = 20))
+```
+
+```{r, eval = FALSE}
+font_add_google("Cinzel", "Cinzel")
+showtext_auto()
+
+ggplot(diamonds) + 
+  geom_bar(aes(color, fill = color)) + 
+  ggtitle("A fancy font") + 
+  theme(text = element_text(family = "Cinzel", size = 20))
+```
+
+
+
+### From Andrew's blog
+Need to have font family installed on computer
+
+```{r eval = FALSE}
+ggplot(mpg, aes(x = cyl, y = hwy)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  annotate("text", x = 5, y = 35, label = "There aren't a lot of\n5 cylinder cars",
+           family = "Source Sans Pro Semibold", color = "#DC5B44", size = 4) +
+  labs(title = "Highway miles per gallon and cylinders",
+       subtitle = "This is an interesting relationship, I guess",
+       caption = "Source: ggplot's built-in data",
+       x = "Cylinders", y = "Highway miles per gallon") +
+  theme_light(base_family = "Source Sans Pro") +
+  theme(plot.caption = element_text(family = "Source Sans Pro ExtraLight"))
+```
+
+
+
+
+
+
+{{% alert note %}}
+Using theme fonts does NOT work.
+{{% /alert %}}
+{{% alert note %}}
+Also, using a .otf font in Font Book doesn't work.
+{{% /alert %}}
+{{% alert note %}}
+Also, using adding `face = "italic"` to `element_text` doesn't work if italic option not specified in font set.
+{{% /alert %}}
+{{% alert warning %}}
+After adding a font to Font Book, might need to restart computer before it works in plots
+{{% /alert %}}
+
+
+
+

@@ -1,0 +1,27 @@
+# Theme metadata
+name = "EMK theme"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#D40067"
+
+# Menu
+menu_primary = "#FDFCFA"
+menu_text = "#000000"
+menu_text_active = "#D40067"
+menu_title = "#000000"
+
+# Backgrounds
+background = "#FDFCFA"
+home_section_odd = "#FDFCFA"
+home_section_even = "#FDFBF0"
+
+dark_background = "#073642"
+
+# Links
+link = "#D40067"
+link_hover = "#D40067"
+
+#font = "rose"
