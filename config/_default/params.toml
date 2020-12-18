@@ -81,19 +81,19 @@ edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir 
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "E.Kaye.1@warwick.ac.uk"
+email = "prd17@pitt.edu"
 phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-# address = {street = "450 Serra Mall", city = "Stanford", region = "CA", postcode = "94305", country = "United States", country_code = "US"}
+# address = {street = "5607 Baum Boulevard, Suite 500", city = "Pittsburgh", region = "PA", postcode = "15206", country = "United States", country_code = "US"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-# coordinates = {latitude = "37.4275", longitude = "-122.1697"}
+# coordinates = {latitude = "40.458123", longitude = "-79.935246"}
 
 # Directions for visitors to locate you.
-# directions = "Enter Building 1 and take the stairs to Office 200 on Floor 2"
+# directions = "Enter Building and take the elevator to Cubicle 412b on Floor 4"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
@@ -105,8 +105,8 @@ phone = ""
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  #{icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/ellamkaye"},
-  #{icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
+  #{icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/pritikadasgupta"},
+  #{icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:rosepetals363"},
   #{icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
   #{icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
@@ -120,7 +120,7 @@ contact_links = [
 sharing_image = ""
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter = "ellamkaye"
+twitter = "pritikadasgupta"
 
 ############################
 ## Regional Settings
