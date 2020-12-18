@@ -30,7 +30,7 @@ code {
 
 pre {
   margin: 0 0 1rem 0;
-  background-color: #FDF6E3; /* Match default highlight theme. CAN'T FIGURE OUT WHAT THIS CHANGES*/
+  background-color: #FF71F0; /* Match default highlight theme. CAN'T FIGURE OUT WHAT THIS CHANGES*/
   border: 15px;
   font-size: 0.75rem;
   border-radius: 12px;
@@ -82,8 +82,7 @@ h1, h2, h3 {
   z-index: 1030;  // For z-index clickable mobile logo.
 }
 
-/*Trying to figure out how to override some elements of the highlight-light.css */
-/*This doesn't have the effect I was hoping, i.e. nothing visible */
+
 /* Background */ .chroma { color: #586e75; background-color: #657B83 }
 
   div.puzzle, div.fyi, div.demo, div.note {
