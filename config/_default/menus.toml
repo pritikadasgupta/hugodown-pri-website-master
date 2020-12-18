@@ -9,29 +9,34 @@
 #  weight = 10
 
 [[main]]
+  name = "Home"
+  url = ""
+  weight = 10
+
+[[main]]
   name = "Talks"
-  url = "#talks"
+  url = "talk/"
   weight = 20
 
 [[main]]
   name = "Posts"
-  url = "#posts"
+  url = "post/"
   weight = 30
 
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "publication/"
   weight = 40
 
-[[main]]
-  name = "Courses"
-  url = "courses/"
-  weight = 50
+#[[main]]
+ # name = "Courses"
+  #url = "courses/"
+  #weight = 50
 
 [[main]]
   name = "Projects"
-  url = "#projects"
+  url = "project/"
   weight = 50
 
 
@@ -40,9 +45,9 @@
  [[main]]
     name = "CV"
     url = "files/cv.pdf"
-    weight = 70
+    weight = 60
 
 [[main]]
   name = "Contact"
-  url = "#contact"
-  weight = 60
+  url = "contact/"
+  weight = 70

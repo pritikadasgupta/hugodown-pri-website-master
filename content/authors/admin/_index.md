@@ -1,6 +1,6 @@
 ---
 # Display name
-name: pritika dasgupta
+name: Pritika Dasgupta
 
 # Username (this should match the folder name)
 authors:
@@ -11,8 +11,6 @@ superuser: true
 
 # Role/position
 role: Biomedical Informatics PhD Candidate
-
-
 
 # Organizations/Affiliations
 organizations:
