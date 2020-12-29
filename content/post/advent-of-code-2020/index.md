@@ -57,13 +57,13 @@ I will be attempting each day using R (mostly), Python (sometimes), and MATLAB (
 | <a href="#day16">Day 16: [Day 16: Ticket Translation](https://adventofcode.com/2020/day/16)    |  \*\*  |
 | <a href="#day17">Day 17: [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)    |  \*\*  |
 | <a href="#day18">Day 18: [Day 18: Operation Order](https://adventofcode.com/2020/day/18)    |  \*\*  |
-| <a href="#day19">| Day 19: [Day 19: Monster Messages](https://adventofcode.com/2020/day/19)    |  \*\*  |
-| <a href="#day20">| Day 20: [Day 20: Jurassic Jigsaw](https://adventofcode.com/2020/day/20)    |  \*\*  |
-| <a href="#day21">| Day 21: [Day 21: Allergen Assessment](https://adventofcode.com/2020/day/21)    |  \*\*  |
-| <a href="#day22">| Day 22: [Day 22: Crab Combat](https://adventofcode.com/2020/day/22)    |  \*\*  |
-| <a href="#day23">| Day 23: [Day 23: Crab Cupst](https://adventofcode.com/2020/day/23)    |  \*\*  |
-| <a href="#day24">| Day 24: [Day 24: Lobby Layout](https://adventofcode.com/2020/day/24)    |  \*\*  |
-| <a href="#day25">| Day 25: [Day 25: Combo Breaker](https://adventofcode.com/2020/day/25)    |  \*\*  |
+| <a href="#day19">Day 19: [Day 19: Monster Messages](https://adventofcode.com/2020/day/19)    |  \*\*  |
+| <a href="#day20"> Day 20: [Day 20: Jurassic Jigsaw](https://adventofcode.com/2020/day/20)    |  \*\*  |
+| <a href="#day21"> Day 21: [Day 21: Allergen Assessment](https://adventofcode.com/2020/day/21)    |  \*\*  |
+| <a href="#day22"> Day 22: [Day 22: Crab Combat](https://adventofcode.com/2020/day/22)    |  \*\*  |
+| <a href="#day23"> Day 23: [Day 23: Crab Cupst](https://adventofcode.com/2020/day/23)    |  \*\*  |
+| <a href="#day24"> Day 24: [Day 24: Lobby Layout](https://adventofcode.com/2020/day/24)    |  \*\*  |
+| <a href="#day25"> Day 25: [Day 25: Combo Breaker](https://adventofcode.com/2020/day/25)    |  \*\*  |
 
 <p>
 <a id='day1'></a>
@@ -72,7 +72,7 @@ I will be attempting each day using R (mostly), Python (sometimes), and MATLAB (
 Day 1: [Report Repair](https://adventofcode.com/2020/day/1)
 -----------------------------------------------------------
 
-[My day 1 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/exercise1.input.txt)
+[My day 1 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day1/exercise1.input.txt)
 
 #### Part 1: Two numbers
 
@@ -94,7 +94,7 @@ def aParticularSum(ar,k):
 fptr = open(os.environ['OUTPUT_PATH'], 'w')
 with open(os.environ['INPUT_PATH']) as ar_count:
     ar = [int(x) for x in ar_count.read().split()]
-k = int(input("What do you want your sum to be? ")) #What do you want your sum to be?
+k = int(input("What do you want your sum to be? ")) 
 result = aParticularSum(ar,k)
 print(result)
 fptr.write(str(result) + '\n')
@@ -118,12 +118,26 @@ def aParticularSum(ar,k):
 fptr = open(os.environ['OUTPUT_PATH'], 'w')
 with open(os.environ['INPUT_PATH']) as ar_count:
     ar = [int(x) for x in ar_count.read().split()]
-k = int(input("What do you want your sum to be? ")) #What do you want your sum to be?
+k = int(input("What do you want your sum to be? ")) 
 result = aParticularSum(ar,k)
 print(result)
 fptr.write(str(result) + '\n')
 fptr.close()
 ```
+
+<p>
+<a id='day2'></a>
+</p>
+
+Day 2: [Password Philosophy](https://adventofcode.com/2020/day/2)
+-----------------------------------------------------------
+
+[My day 2 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input)
+
+#### Part 1: 
+
+
+
 ----
 
 This post will be updated as I code/work through the rest of the challenges.
