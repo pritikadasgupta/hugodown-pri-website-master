@@ -2,7 +2,7 @@
 output: hugodown::md_document
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Advent of Code 2020"
+title: "Advent of Code 2020 Day 4"
 subtitle: ""
 summary: "Working through [Advent of Code](https://adventofcode.com) 2020!"
 authors: []
