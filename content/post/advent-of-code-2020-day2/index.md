@@ -9,7 +9,7 @@ authors: []
 tags: ["R", "rstats", "code"]
 categories: ["R"]
 date: 2020-12-02
-lastmod: 2020-12-30
+lastmod: 2020-12-02
 featured: false
 draft: false
 
@@ -31,7 +31,7 @@ rmd_hash: 6f696410d260d961
 
 ---
 
-Today's Advent of Code is all about passwords and using R!!
+Today's Advent of Code is all about passwords and using R!! The only (*laughs* only) library I used was tidyverse, particularly for its magrittr pipe and separate functions. My goal is to use a combo of tidyverse and base R in my solutions so I'm not particularly dependent on tidyverse solutions, since tidyverse (as great as it is) is slowly morphing into something bigger than R itself (more on that later! probably in another blog post).
 
 [My github repository](https://github.com/pritikadasgupta/adventofcode) contains my solutions to Advent of Code 2019-2020!
 
@@ -45,11 +45,13 @@ Today's Advent of Code is all about passwords and using R!!
 Day 2: [Password Philosophy](https://adventofcode.com/2020/day/2)
 -----------------------------------------------------------
 
-The problem asks you to go through a list of password policies and passwords, ([my day 2 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input), and then we have to figure out which passwords are valid according to their policies.
+The problem asks you to go through a list of password policies and passwords, [my day 2 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input), and then we have to figure out which passwords are valid according to their policies.
 
-## Part 1: 
+## Part 1: Valid Passwords
+
 ## Load in Data:
 ```{r}
+library(tidyverse)
 #Use this if you're running from the command line:
 # df <- read.table(file("stdin"), header = FALSE, sep = " ")
 
@@ -57,7 +59,8 @@ The problem asks you to go through a list of password policies and passwords, ([
 df <- read.table("2020/Day2/input", header = FALSE, sep = " ")
 ```
 
-My first instinct was to clean up the dataframe I just created.
+My first instinct was to clean up the dataset I just created.
+
 First, I get min and max: lowest and highest number of times.
 
 ```{r}
@@ -80,6 +83,48 @@ countLetter <- function(x){
 }
 
 df2$count <- apply(df2[,3:4], 1, countLetter)
+```
+
+Then another function to check if a password is valid:
+```{r}
+validPassword <- function(x){
+  x <- as.numeric(x)
+  if(x[5] <= x[2] && x[5]>= x[1]){
+    return(1)
+  }else{
+    return(0)
+  }
+}
+
+df2$valid <- apply(df2, 1, validPassword)
+
+sum(df2$valid) #part 1 solution
+```
+
+## Part 2: Password Policies
+
+Part 2 asks us to interpret the password policies in a new way:
+
+```{r}
+df3 <- df2[,1:4] #new dataframe
+
+validPassword2 <- function(x){
+  string <- strsplit(as.character(x[4]),"")[[1]]
+  min <- as.numeric(x[1])
+  max <- as.numeric(x[2])
+  letter <- as.character(x[3])
+  if(string[min] == letter && string[max]==letter){
+    return(0)
+  }else if(string[min] == letter || string[max]==letter){
+    return(1)
+  }else{
+    return(0) 
+  }
+}
+
+df3$valid <- apply(df3, 1, validPassword2)
+
+sum(df3$valid) #part 2 solution
 ```
 
 ----

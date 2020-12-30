@@ -9,7 +9,7 @@ authors: []
 tags: ["python", "code"]
 categories: ["python"]
 date: 2020-12-01
-lastmod: 2020-12-30
+lastmod: 2020-12-01
 featured: false
 draft: false
 
