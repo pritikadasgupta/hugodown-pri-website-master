@@ -76,7 +76,7 @@ Day 1: [Report Repair](https://adventofcode.com/2020/day/1)
 
 [My day 1 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day1/exercise1.input.txt)
 
-#### Part 1: Two numbers
+## Part 1: Two numbers
 
 The challenge was to find two numbers from a list that sum to 2020, then to report their product.
 
@@ -118,7 +118,7 @@ This one (above) was of O(nlogn) time complexity with a space complexity of O(1)
 
 So how do I come up with a solution that's both efficient in terms of time and space complexity? Two words...
 
-## List Comprehensions
+### List Comprehensions
 
 ```python
 def aParticularSum(ar,k):
@@ -150,7 +150,7 @@ print(result)
 fptr.write(str(result) + '\n')
 fptr.close()
 ```
-#### Part 2: Three numbers
+## Part 2: Three numbers
 The challenge was to find THREE numbers from a list that sum to 2020, then to report their product. We can take our previous solution and tweak it a little to add another variable.
 
 ```python
@@ -184,7 +184,7 @@ Day 2: [Password Philosophy](https://adventofcode.com/2020/day/2)
 
 [My day 2 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input)
 
-#### Part 1: 
+## Part 1: 
 
 <p>
 <a id='day3'></a>
@@ -195,7 +195,7 @@ Day 3: [Toboggan Trajectory](https://adventofcode.com/2020/day/3)
 
 [My day 3 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day3/input)
 
-#### Part 1: 
+## Part 1: 
 
 
 <p>
@@ -210,7 +210,7 @@ Day 4: [Passport Processing](https://adventofcode.com/2020/day/4)
 [My day 4 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day4/exercise4.testinput.txt)
 
 
-#### Part 1: 
+## Part 1: 
 
 <p>
 <a id='day5'></a>
@@ -223,7 +223,7 @@ Day 5: [Binary Boarding](https://adventofcode.com/2020/day/5)
 
 
 
-#### Part 1: 
+## Part 1: 
 
 <p>
 <a id='day6'></a>
@@ -237,7 +237,7 @@ Day 6: [Custom Customs](https://adventofcode.com/2020/day/6)
 [My day 6 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day6/exercise6.testinput.txt)
 
 
-#### Part 1: 
+## Part 1: 
 
 <p>
 <a id='day7'></a>
@@ -249,7 +249,7 @@ Day 7: [Handy Haversacks](https://adventofcode.com/2020/day/7)
 [My day 7 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day7/input)
 
 
-#### Part 1: 
+## Part 1: 
 
 
 <p>
@@ -264,7 +264,7 @@ Day 8: [Handheld Halting](https://adventofcode.com/2020/day/8)
 [My day 8 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day8/exercise8.testinput.txt)
 
 
-#### Part 1: 
+## Part 1: 
 
 <p>
 <a id='day9'></a>
@@ -278,7 +278,7 @@ Day 9: [Encoding Error](https://adventofcode.com/2020/day/9)
 [My day 9 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day9/exercise9.testinput.txt)
 
 
-#### Part 1: 
+## Part 1: 
 
 
 <p>
@@ -293,7 +293,7 @@ Day 10: [Adapter Array](https://adventofcode.com/2020/day/10)
 [My day 10 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day10/exercise10.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 <p>
@@ -308,7 +308,7 @@ Day 11: [Seating System](https://adventofcode.com/2020/day/11)
 [My day 11 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day11/exercise11.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 <p>
 <a id='day12'></a>
@@ -322,7 +322,7 @@ Day 12: [Rain Risk](https://adventofcode.com/2020/day/12)
 [My day 12 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day12/exercise12.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 
@@ -338,7 +338,7 @@ Day 13: [Shuttle Search](https://adventofcode.com/2020/day/13)
 [My day 13 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day13/exercise13.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 <p>
 <a id='day14'></a>
@@ -352,7 +352,7 @@ Day 14: [Docking Data](https://adventofcode.com/2020/day/14)
 [My day 14 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day14/exercise14.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 
@@ -368,7 +368,7 @@ Day 15: [Rambunctious Recitation](https://adventofcode.com/2020/day/15)
 [My day 15 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day15/exercise15.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 
@@ -384,7 +384,7 @@ Day 16: [Ticket Translation](https://adventofcode.com/2020/day/16)
 [My day 16 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day16/exercise16.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 <p>
@@ -399,7 +399,7 @@ Day 17: [Conway Cubes](https://adventofcode.com/2020/day/17)
 [My day 17 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day17/exercise17.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 <p>
@@ -414,7 +414,7 @@ Day 18: [Operation Order](https://adventofcode.com/2020/day/18)
 [My day 18 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day18/exercise18.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 <p>
 <a id='day19'></a>
@@ -428,7 +428,7 @@ Day 19: [Monster Messages](https://adventofcode.com/2020/day/19)
 [My day 19 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day19/exercise19.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 <p>
 <a id='day20'></a>
@@ -442,7 +442,7 @@ Day 20: [Jurassic Jigsaw](https://adventofcode.com/2020/day/20)
 [My day 20 test data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day20/exercise20.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 <p>
@@ -457,7 +457,7 @@ Day 21: [Handheld Halting](https://adventofcode.com/2121/day/21)
 [My day 21 test data](https://pritikadasgupta.github.io/post/advent-of-code-2121/data/Day21/exercise21.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 
@@ -473,7 +473,7 @@ Day 22: [Handheld Halting](https://adventofcode.com/2222/day/22)
 [My day 22 test data](https://pritikadasgupta.github.io/post/advent-of-code-2222/data/Day22/exercise22.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 <p>
@@ -488,7 +488,7 @@ Day 23: [Handheld Halting](https://adventofcode.com/2323/day/23)
 [My day 23 test data](https://pritikadasgupta.github.io/post/advent-of-code-2323/data/Day23/exercise23.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 
@@ -504,7 +504,7 @@ Day 24: [Handheld Halting](https://adventofcode.com/2424/day/24)
 [My day 24 test data](https://pritikadasgupta.github.io/post/advent-of-code-2424/data/Day24/exercise24.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 <p>
@@ -519,7 +519,7 @@ Day 25: [Handheld Halting](https://adventofcode.com/2525/day/25)
 [My day 25 test data](https://pritikadasgupta.github.io/post/advent-of-code-2525/data/Day25/exercise25.testinput.txt)
 
 
-#### Part 1:   
+## Part 1:   
 
 
 
