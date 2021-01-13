@@ -50,7 +50,7 @@ rmd_hash: 6f696410d260d961
 Day 5: [Binary Boarding](https://adventofcode.com/2020/day/5)
 -----------------------------------------------------------
 
-[My day 5 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day5/input)
+[My day 5 data](https://pritikadasgupta.github.io/post/advent-of-code-2020-day5/data/Day5/input)
 
 
 

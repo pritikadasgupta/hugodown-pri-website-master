@@ -50,7 +50,7 @@ I will be attempting each day using R (mostly), Python (sometimes), and MATLAB (
 Day 1: [Report Repair](https://adventofcode.com/2020/day/1)
 -----------------------------------------------------------
 
-[My day 1 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day1/exercise1.input.txt)
+[My day 1 data](https://pritikadasgupta.github.io/post/advent-of-code-2020-day1-python/data/Day1/exercise1.input.txt)
 
 ## Part 1: Two numbers
 

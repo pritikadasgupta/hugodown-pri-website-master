@@ -39,7 +39,7 @@ I redid Day 2's challenge in python.
 Day 2: [Password Philosophy](https://adventofcode.com/2020/day/2)
 -----------------------------------------------------------
 
-The problem asks you to go through a list of password policies and passwords, [my day 2 data](https://pritikadasgupta.github.io/post/advent-of-code-2020/data/Day2/input), and then we have to figure out which passwords are valid according to their policies.
+The problem asks you to go through a list of password policies and passwords, [my day 2 data](https://pritikadasgupta.github.io/post/advent-of-code-2020-day2-python/data/Day2/input), and then we have to figure out which passwords are valid according to their policies.
 
 ## Part 1 & 2: Valid Passwords
 
